@@ -6,7 +6,9 @@
   "author": "edevars <e.devars.dev@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "webpack-dev-server --mode development"
+    "dev": "webpack-dev-server --mode development",
+    "build": "webpack --mode=production", 
+    "serve": "yarn run build && node server.js"
   },
   "dependencies": {
     "react": "^18.2.0",
