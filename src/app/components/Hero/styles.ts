@@ -19,4 +19,38 @@ export const StyledHero = styled.section`
     font-weight: bold;
     font-size: 1.125rem;
   }
+
+  @media screen and (min-width: 1024px) {
+    display: grid;
+    grid-template-columns: 480px auto;
+    grid-template-areas:
+    'image title'
+    'image subtitle';
+    column-gap: 120px;
+    margin: 80px auto;
+    max-width: 65%;
+
+    & > h1 {
+      display: inline;
+      grid-area: title;
+      text-transform: uppercase;
+      text-align: left;
+      margin-top: 120px;
+      margin-bottom: 0%;
+      font-size: 70px;
+    }
+
+    & > img {
+      width: 100%;
+      grid-area: image;
+    }
+
+    & > p {
+      margin-top: 0%;
+      max-width: none;
+      font-size: 32px;
+      text-align: left;
+      align-self: baseline;
+    }
+  }
 `
