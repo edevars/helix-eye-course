@@ -1,16 +1,18 @@
 import React from 'react';
-import { Header } from '../components/Header';
 import { Routes, Route, BrowserRouter } from "react-router-dom";
+import { GlobalStyles } from '../styles/GlobalStyles';
+import { Menu } from '../shared/Menu';
 import { Home } from '../pages/Home';
-import { Info } from '../pages/Info';
+import { Galaxies } from '../pages/Galaxies';
 
 export const App = () => {
   return (
     <BrowserRouter>
-      <Header />
+      <GlobalStyles />
+      <Menu />
       <Routes>
         <Route index path='/' element={<Home />} />
-        <Route path="/info" element={<Info />} />
+        <Route path="/galaxias" element={<Galaxies />} />
       </Routes>
     </BrowserRouter>
   )
