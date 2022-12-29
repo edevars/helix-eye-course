@@ -1,10 +1,17 @@
 import styled from 'styled-components';
 
 export const StyledHighlitedContent = styled.section`
-  margin: 6.4rem 3.2rem;
+  margin: 4rem 2rem;
+
+  & > h2 {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
   
   & > .message {
     margin-top: 2rem;
+    font-size: 1.125rem;
+    line-height: 150%;
   }
 
   & > .cards-wrapper {

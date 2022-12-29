@@ -1,19 +1,18 @@
 import styled from 'styled-components';
 
 export const StyledHero = styled.section`
-  margin-top: 10rem;
+  margin-top: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
 
-  h1 {
-    color: #2646A6;
+  & > h1 {
     text-transform: uppercase;
     font-size: 3rem;
     text-align: center;
   }
 
-  p {
+  & > p {
     margin-top: 3rem;
     max-width: 260px;
     text-align: center;

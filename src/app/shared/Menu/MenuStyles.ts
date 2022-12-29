@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const MenuButton = styled.button`
   display: ${({ hidden }) => hidden ? 'none' : 'block'};
   border: none;
-  background: #2646A6;
+  background: linear-gradient(270deg, #2646A6,#0C87F2);
   font-size: 1.5rem;
   color: white;
   border-radius: 50%;
@@ -12,8 +12,7 @@ export const MenuButton = styled.button`
   position: fixed;
   top: 32px;
   right: 32px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  z-index: 0;
+  z-index: 10;
   cursor: pointer;
 `
 
