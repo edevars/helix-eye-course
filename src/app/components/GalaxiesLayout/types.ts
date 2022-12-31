@@ -1,9 +1,9 @@
-interface GalaxyData {
+export interface GalaxyData {
   data: {
     title: string,
     nasa_id: string,
     keywords: string[],
-    media_type: string,
+    media_type?: 'audio' | 'image' | 'video',
     description: string,
   }[],
   links: {
@@ -13,8 +13,6 @@ interface GalaxyData {
   }[]
 }
 
-interface GalaxiesProps {
+export interface GalaxiesProps {
   galaxies?: GalaxyData[]
 }
-
-export { GalaxiesProps }

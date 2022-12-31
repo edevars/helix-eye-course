@@ -43,6 +43,9 @@ export const StyledHero = styled.section`
     & > picture {
       width: 100%;
       grid-area: image;
+      & > img {
+        max-width: 500px;
+      }
     }
 
     & > p {
