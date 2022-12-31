@@ -5,7 +5,8 @@ module.exports = {
   entry: './src/app/index.tsx',
   output: {
     path: path.join(__dirname, '/dist'),
-    filename: 'bundle.js'
+    filename: 'bundle.js',
+    publicPath: '/'
   },
   module: {
     rules: [
@@ -28,5 +29,6 @@ module.exports = {
     hot: true,
     port: 3000,
     open: true,
+    historyApiFallback: true
   },
 };
