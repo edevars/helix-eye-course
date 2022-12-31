@@ -40,7 +40,7 @@ export const StyledHero = styled.section`
       font-size: 70px;
     }
 
-    & > img {
+    & > picture {
       width: 100%;
       grid-area: image;
     }
