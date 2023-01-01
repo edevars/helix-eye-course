@@ -8,7 +8,7 @@
   "scripts": {
     "dev": "webpack-dev-server --mode development",
     "build": "webpack --mode=production",
-    "serve": "yarn run build && node server.js"
+    "serve": "NODE_ENV=production yarn run build && node server.js"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.2.1",
