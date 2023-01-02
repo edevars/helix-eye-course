@@ -1,4 +1,4 @@
-export const template = (html:string, initialProps:object={}): string => (
+export const template = (html: string, initialProps: object = {}, styles=''): string => (
   `
 <!DOCTYPE html>
 <html lang="en">
@@ -9,6 +9,7 @@ export const template = (html:string, initialProps:object={}): string => (
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600&display=swap" rel="stylesheet">
+  ${styles}
   <title>Helix App</title>
 </head>
 <body>
