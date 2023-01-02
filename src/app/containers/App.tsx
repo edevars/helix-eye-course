@@ -7,6 +7,7 @@ import { Galaxies } from '../pages/Galaxies';
 import { Footer } from '../components/Footer';
 
 export const App = () => {
+
   return (
     <>
       <GlobalStyles />
@@ -15,7 +16,7 @@ export const App = () => {
         <Route index path='/' element={<Home />} />
         <Route path="/galaxias" element={<Galaxies />} />
       </Routes>
-      <Footer/>
+      <Footer />
     </>
   )
 }
