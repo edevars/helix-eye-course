@@ -1,11 +1,12 @@
-import express from 'express'
+import express, { Express, Request, Response } from 'express';
+import { config } from './config';
 
-const app = express()
+const app: Express = express()
 
-app.get('/', (req, res) => {
+app.get('/', (req: Request, res: Response) => {
   res.send("<h1>Hola mundo</h1>")
 });
 
-app.listen(6001, () => {
-  console.log("http://localhost:6001");
+app.listen(config.PORT, () => {
+  console.log(`⚡️ Sever listening in http://localhost:${config.PORT}`);
 })
