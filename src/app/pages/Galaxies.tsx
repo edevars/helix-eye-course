@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import { GalaxiesLayout } from '../components/GalaxiesLayout';
 import { LoadingSpinner } from '../components/LoadingSpinner';
@@ -10,14 +10,9 @@ const GalaxiesPageWrapper = styled.div`
   width: calc(100% - 6rem);
 `
 
-export const Galaxies = () => {
+export const Galaxies = (props: { galaxies: [] }) => {
 
-  const [galaxies, setGalaxies] = useState([])
-
-  useEffect(() => {
-    setGalaxies(window.__INITIAL_PROPS__.galaxies)
-    delete window.__INITIAL_PROPS__
-  }, [])
+  const { galaxies } = props
 
   const renderLayout = () => {
     if (galaxies?.length === 0) return <LoadingSpinner />

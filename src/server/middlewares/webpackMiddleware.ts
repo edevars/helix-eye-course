@@ -11,9 +11,6 @@ export const webpackMiddleware = () => {
 
   const compiler = webpack(webpackClientConfig);
 
-  compiler.hooks.compile.tap('done', () => {
-    openBrowser(`http://localhost:${config.PORT}`);
-  })
 
   return [
     whm(compiler, { log: false, path: '/__webpack_hmr', heartbeat: 200 }),
