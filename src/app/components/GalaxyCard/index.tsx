@@ -12,8 +12,6 @@ export const GalaxyCard = ({ galaxy }: GalaxyCardProps) => {
   const galaxyData = galaxy.data[0]
   const galaxyImage = galaxy.links?.length ? galaxy.links[0].href : 'https://i.imgur.com/GHqELEK.jpeg'
 
-  if (!galaxy.links) console.log(galaxy)
-
   const renderMediaTypeIcon = (mediaType: string) => {
     const mediaIcon = {
       'image': faImage,

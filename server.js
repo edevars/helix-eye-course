@@ -1,9 +1,12 @@
 const express = require('express');
 const path = require('path');
+const dotenv = require('dotenv')
+
+dotenv.config()
+
+const PORT = process.env.PORT;
 const app = express();
 
-
-const PORT = process.env.PORT || 9000
 app.use(express.static(path.join(__dirname, 'dist')));
 
 app.get('/', function (req, res) {
@@ -11,5 +14,5 @@ app.get('/', function (req, res) {
 });
 
 app.listen(PORT, () => {
-  console.info(`Running app in production mode in port ${PORT}`)
+  console.info(`Running app in production mode in http://localhost:${PORT}`)
 });
