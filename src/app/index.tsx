@@ -11,3 +11,7 @@ hydrateRoot(
     <App />
   </BrowserRouter>
 )
+
+if (module.hot) {
+  module.hot.accept();
+}
